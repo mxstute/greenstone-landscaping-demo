@@ -384,11 +384,16 @@
     </div>
     <div class="footer-col"><h4>Services</h4><a href="#">Lawn Care</a><a href="#">Landscape Design</a><a href="#">Hardscaping</a><a href="#">Irrigation</a></div>
     <div class="footer-col"><h4>Company</h4><a href="#">About Us</a><a href="#">Reviews</a><a href="#">Gallery</a><a href="#">Careers</a></div>
-    <div class="footer-col"><h4>Contact</h4><a href="#">(803) 555-4321</a><a href="#"><span class="__cf_email__" data-cfemail="2b42454d446b4c594e4e45585f44454e474a454f58484a5b42454c05484446">[email&#160;protected]</span></a><a href="#">Columbia, SC</a></div>
+    <div class="footer-col"><h4>Contact</h4><a href="#">(803) 555-4321</a><a href="#">info@greenstonelandscaping.com</a><a href="#">Columbia, SC</a></div>
   </div>
   <div class="footer-bottom">&copy; 2026 Greenstone Landscaping LLC. All rights reserved. | Licensed & Insured</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => { if (entry.isIntersecting) setTimeout(() =>
+    entries.forEach((entry, i) => { if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 80); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
